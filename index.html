@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My map</title>
+
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/initializeMap.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+</head>
+<body>
+	<header id="section-itinerary">
+		<h1>My maps</h1>
+		<!-- <small>Visiter les plus beau monuments</small> -->
+		<form id="chooseDestination">
+			<div class="geoloc mdl-textfield mdl-js-textfield">
+				<label id="geoloc" class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+				  	<input type="checkbox" id="switch-2" class="mdl-switch__input" />
+				  	<span class="mdl-switch__label">Ma position</span>
+				</label>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input placeholder="" class="mdl-textfield__input" type="text" id="departure" />
+				<label class="mdl-textfield__label" for="sample1">Départ</label>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input placeholder="" class="mdl-textfield__input" type="text" id="arrived" />
+				<label class="mdl-textfield__label" for="sample1">Arrivé</label>
+			</div>
+			<button type="submit" id="iti" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Let's go</button>
+		</form>		
+		<button id="full">fullscreen</button>
+	</header>
+
+	<div id="wrapper">
+		<div id="select-action">
+			<ul>
+				<li data-option="save" title="Sauvegarder l'itinéraire" class="radius fa fa-floppy-o"></li>
+				<li data-option="Driving" title="En voiture" class="fa fa-car"></li>
+				<li data-option="Transit" title="En transport" class="fa fa-bus"></li>
+				<li data-option="Bicycling" title="En vélo" class="fa fa-bicycle"></li>
+				<li data-option="Walking" title="A pieds" class="fa fa-male"></li>
+			</ul>
+		</div>
+		<div id="map">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Plein écran</button>
+		</div>
+		<div id="options">
+			<form>
+				<p>Points d'interêts</p>
+				<hr>
+
+				<div id="choosePlace">
+					<i>(Ctrl-Clic choix multiple 8max.) <span class="count"></span></i><br>
+				    <select multiple id="waypoints"></select>
+				</div>
+				<div id="viewRoute"></div>
+				<div id="buttonNav">
+					<input id="viewDirection" type="submit" value="Rechercher" />
+				</div>
+
+		    </form>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/material.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDQXs5-iizzJo-CYmpssHPQMgM1bD5bsPw&signed_in=true&callback=initMap"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+html, body 
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*body 
+{
+	background: url(../img/back1.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	animation: defile 60s linear infinite;
+}
+
+@keyframes defile 
+{
+from {background-position: 0px 0px;}
+to {background-position: 1920px 0px;}
+}
+*/
+header
+{
+	margin-bottom: 100px;
+	box-shadow: 0px 0px 10px black;
+	padding: 10px;
+}
+
+header h1
+{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	float: left;
+}
+
+#chooseDestination
+{
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	padding-left: 15px; 
+}
+
+#wrapper
+{
+	width: 1250px;
+	height: 600px;
+	margin: auto;
+	box-shadow: 0px 0px 20px #6C7A89;
+	border-radius: 5px;	
+}
+
+.mdl-textfield
+{
+	width: 30%;
+	margin-right: 60px;
+}
+
+#select-action ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#select-action li
+{
+    float: left;
+    font-size: 2em;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*#select-action ul li:hover
+{
+    color: #1F3A93;
+    background: #fff;
+}*/
+
+#select-action #selectedParam
+{
+    color: #1F3A93;
+    background: #fff;
+}
+
+.radius
+{
+	border-top-left-radius: 5px;
+}
+
+/*.mdl-button--raised.mdl-button--colored
+{
+	background: #EF4836;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 2;
+}*/
+
+#geoloc, .geoloc
+{
+	display: inline;
+}
+
+#iti
+{
+    position: absolute;
+    top: 25px;
+    right: 300px;	
+}
+
+#select-action, #map, #options
+{
+	float: left;
+}
+
+#select-action
+{
+	width: 50px;
+	height: 100%;
+	background: #1F3A93;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#map
+{
+	width: 800px;
+	height: 100%;
+	position: relative;
+}
+
+#options
+{
+	width: 400px;
+	height: 100%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#options form p
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;	
+}
+
+#waypoints
+{
+	width: 380px;
+	height: 470px;
+    margin: auto;
+    display: block;
+}
+
+#viewRoute
+{
+	height: 490px;
+	overflow: auto;
+}
+
+#viewDirection, #moreDetails, #return
+{
+	width: 380px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    background: #26A65B;
+    color: #fff;
+    border: 0;
+    margin-top: 5px;
+}
+
+#moreDetails
+{
+    background: #9B59B6;	
+}
+
+#return
+{
+    background: #9B59B6;	
+}
